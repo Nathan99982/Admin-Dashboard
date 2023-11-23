@@ -60,7 +60,7 @@ h4{
 /* Sidebar Elements Style */
 
 #sidebar{
-    background-color: #e9ecef;
+    background-color: #0d1520;
     color: #0d1520;
 }
 
@@ -97,8 +97,8 @@ h4{
 }
 
 a.sidebar-link{
-    padding: .625rem 1.625rem;
-    color: #0d1520;
+    padding: .900rem 1.625rem;
+    color: #e9ecef;
     position: relative;
     display: flex;
     font-size: 0.975rem;
@@ -110,6 +110,18 @@ a.sidebar-link{
 
 .sidebar-item{
     margin-bottom: 25px;
+}
+
+.logout{
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    transform: translateX(30%);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .icon{
@@ -156,4 +168,14 @@ a.sidebar-link{
 
 .card-body-scorecard{
     height: 500px;
+}
+
+/* Custom CSS for hover effect on cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(13, 21, 32, 0.8);
 }
