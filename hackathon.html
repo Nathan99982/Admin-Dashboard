@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <!-- Content for Sidebar -->
+            <div class="d-flex flex-column justify-content-between h-100" id="sidebar">
+                <div class="sidebar-logo">
+                    <img src="epf_favicon-full-white.png" alt="" width="260px" height="100px">
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bxs-dashboard icon'></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bxs-trophy icon' ></i>
+                            Hackathon
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bxs-news icon'></i>
+                            News Feed
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bx-task-x icon'></i>
+                           Scorecard
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bxs-chat icon'></i>
+                            General Chat
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link"> 
+                            <i class='bx bxs-message-rounded-dots icon' ></i>
+                            Team Chat
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                <button class="logout"> <i class='bx bxs-log-out icon'></i> Logout </button>
+                </div>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar">
+                <button class="btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <main class="content px-5 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4>Hackathons</h4>
+                        <!-- Hackathon Stats -->
+                        <br>
+                        <div class="row">
+                            <div class="col-6 col-md-3 d-flex">
+                                <div class="card flex-fill border-0">
+                                    <div class="card-body py-4">
+                                        <div class="d-flex align-items-start">
+                                            <div class="flex-grow-1">
+                                                <h4 class="mb-2">
+                                                    Total Hackathons Created
+                                                </h4>
+                                                <h1> 25 </h1>
+                                            </div>
+                                            <div class="ms-3">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex">
+                                <div class="card flex-fill border-0">
+                                    <div class="card-body py-4">
+                                        <div class="d-flex align-items-start">
+                                            <div class="flex-grow-1">
+                                                <h4 class="mb-2">
+                                                    Total Hackathons Completed
+                                                </h4>
+                                                <h1>15</h1>
+                                            </div>
+                                            <div class="ms-3">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add two more similar blocks for the other two columns -->
+                            <!-- Example for the third column -->
+                            <div class="col-6 col-md-3 d-flex">
+                                <div class="card flex-fill border-0">
+                                    <div class="card-body py-4">
+                                        <div class="d-flex align-items-start">
+                                            <div class="flex-grow-1">
+                                                <h4 class="mb-2">
+                                                    Total Hackathons On-Going
+                                                </h4>
+                                                <h1>7</h1>
+                                            </div>
+                                            <div class="ms-3">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Example for the fourth column -->
+                            <div class="col-6 col-md-3 d-flex">
+                                <div class="card flex-fill border-0">
+                                    <div class="card-body py-4">
+                                        <div class="d-flex align-items-start">
+                                            <div class="flex-grow-1">
+                                                <h4 class="mb-2">
+                                                    Total Hackathons Available
+                                                </h4>
+                                                <h1>3</h1>
+                                            </div>
+                                            <div class="ms-3">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>List of current hackathons: </h5>
+                        <br>
+                        <!-- Top Buttons -->
+                        <div class="d-flex justify-content-between">
+                        <button> <i class='bx bx-plus'></i>New Hackathon</button>
+                        <button><i class='bx bx-filter' ></i>Filter</button>
+                        </div>
+                        <br>
+                        <!-- Hackathon Table -->
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Operations</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="table-primary">
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>21-11-2023</td>
+                                <td>10-12-2023</td>
+                                <th>Available</th>
+                                <td><button class="view"><i class='bx bxs-file'></i> View</button> <button class="edit"> <i class='bx bxs-edit-alt'></i> Edit</button> <button class="delete"> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                              <tr class="table-secondary">
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>22-11-2023</td>
+                                <td>11-11-2023</td>
+                                <td>On-Going</td>
+                                <td><button> <i class='bx bxs-file'></i> View</button> <button> <i class='bx bxs-edit-alt'></i> Edit</button> <button> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                              <tr class="table-primary">
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>23-11-2023</td>
+                                <td>12-11-2023</td>
+                                <td>Completed</td>
+                                <td><button> <i class='bx bxs-file'></i> View</button> <button> <i class='bx bxs-edit-alt'></i> Edit</button> <button> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                              <tr class="table-secondary">
+                                <th scope="row">4</th>
+                                <td>Mark</td>
+                                <td>21-11-2023</td>
+                                <td>10-12-2023</td>
+                                <td>On-Going</td>
+                                <td><button> <i class='bx bxs-file'></i> View</button> <button> <i class='bx bxs-edit-alt'></i> Edit</button> <button> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                              <tr class="table-primary">
+                                <th scope="row">5</th>
+                                <td>Jacob</td>
+                                <td>22-11-2023</td>
+                                <td>11-11-2023</td>
+                                <td>Available</td>
+                                <td><button> <i class='bx bxs-file'></i> View</button> <button> <i class='bx bxs-edit-alt'></i> Edit</button> <button> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                              <tr class="table-secondary">
+                                <th scope="row">6</th>
+                                <td>Larry</td>
+                                <td>23-11-2023</td>
+                                <td>12-11-2023</td>
+                                <td>Completed</td>
+                                <td><button> <i class='bx bxs-file'></i> View</button> <button> <i class='bx bxs-edit-alt'></i> Edit</button> <button> <i class='bx bxs-trash'></i> Delete</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <script src="main.js"></script>
+</body>
+</html>

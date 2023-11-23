@@ -179,3 +179,8 @@ a.sidebar-link{
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(13, 21, 32, 0.8);
 }
+
+/* Hackathons Page */
+.view{
+    background-color: blue;
+}
