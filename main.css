@@ -28,7 +28,7 @@ h4{
     font-family: 'Poppins', sans-serif;
     font-size: 1.275rem;
     color: var(--bs-emphasis-color);
-    
+
 }
 
 /* Layout for admin dashboard skeleton */
@@ -59,8 +59,13 @@ h4{
 
 /* Sidebar Elements Style */
 
+#sidebar{
+    background-color: #e9ecef;
+    color: #0d1520;
+}
+
 .sidebar-logo{
-    padding: 1.15rem;
+    padding-top: 1.15rem;
 }
 
 .sidebar-logo a{
@@ -72,7 +77,15 @@ h4{
 .sidebar-nav{
     flex-grow: 1;
     list-style: none;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-logout{
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 100px;
     padding-left: 0;
     margin-left: 0;
 }
@@ -85,12 +98,24 @@ h4{
 
 a.sidebar-link{
     padding: .625rem 1.625rem;
-    color: #e9ecef;
+    color: #0d1520;
     position: relative;
-    display: block;
-    font-size: 0.875rem;
+    display: flex;
+    font-size: 0.975rem;
 }
 
+.sidebar-logo{
+    margin-bottom: 50px;
+}
+
+.sidebar-item{
+    margin-bottom: 25px;
+}
+
+.icon{
+    font-size: 25px;
+    margin-right: 10px;
+}
 
 
 .content{
@@ -119,4 +144,16 @@ a.sidebar-link{
 .illustration-img{
     max-width: 150px;
     width: 100%;
+}
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed{
+    margin-left: -264px;
+}
+
+/* Second Row of Options */
+
+.card-body-scorecard{
+    height: 500px;
 }
