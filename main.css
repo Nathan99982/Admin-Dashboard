@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.275rem;
+    color: var(--bs-emphasis-color);
+
+}
+
+/* Layout for admin dashboard skeleton */
+
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar{
+    max-width: 264px;
+    min-width: 264px;
+    background: var(--bs-dark);
+    transition: all 0.35s ease-in-out;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+    background: var(--bs-dark-bg-subtle);
+}
+
+/* Sidebar Elements Style */
+
+#sidebar{
+    background-color: #e9ecef;
+    color: #0d1520;
+}
+
+.sidebar-logo{
+    padding-top: 1.15rem;
+}
+
+.sidebar-logo a{
+    color: #e9ecef;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-nav{
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-logout{
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 100px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-header{
+    color: #e9ecef;
+    font: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link{
+    padding: .625rem 1.625rem;
+    color: #0d1520;
+    position: relative;
+    display: flex;
+    font-size: 0.975rem;
+}
+
+.sidebar-logo{
+    margin-bottom: 50px;
+}
+
+.sidebar-item{
+    margin-bottom: 25px;
+}
+
+.icon{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+.content{
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+@media (min-width:768px){
+    .content{
+        max-width: auto;
+        width: auto;
+    }
+}
+
+.card{
+    box-shadow: 0 0 .875rem 0 rgba(34, 46, 60, .05);
+    margin-bottom: 24px;
+}
+
+.illustration{
+    background-color: var(--bs-primary--bg-subtle);
+    color: var(--bs-emphasis-color);
+}
+
+.illustration-img{
+    max-width: 150px;
+    width: 100%;
+}
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed{
+    margin-left: -264px;
+}
+
+/* Second Row of Options */
+
+.card-body-scorecard{
+    height: 500px;
+}
