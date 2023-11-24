@@ -105,7 +105,7 @@ a.sidebar-link{
 }
 
 .sidebar-logo{
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .sidebar-item{
@@ -180,7 +180,20 @@ a.sidebar-link{
     box-shadow: 0 0 30px rgba(13, 21, 32, 0.8);
 }
 
+.role{
+    color: #e9ecef;
+    font-size: 15px;
+}
+
 /* Hackathons Page */
-.view{
-    background-color: blue;
+.create-hackathon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.symbol{
+    font-size: 16px;
 }
